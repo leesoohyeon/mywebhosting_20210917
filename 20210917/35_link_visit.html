@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 밑줄 없앰 */
+        a{text-decoration: none;}
+        /* 방문한적 있는 곳은 빨간색 표시 */
+        a:visited{color:red}
+        /* Href라는 속성을 가지고 있는 a태그를 선택 */
+        a:link::after{content : ' - ' attr(href) }
+    </style>
+</head>
+<body>
+    <h1><a>nothing</a></h1>
+    <h1><a href="https://www.msn.com">msn</a></h1>
+    <h1><a href="https://www.naver.com">네이버</a></h1>
+</body>
+</html>

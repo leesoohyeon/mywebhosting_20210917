@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 이런식으로 태그를 좀 더 쉽고 빠르게 적는 걸 Emmet 혹은 젠코딩이라고 함 -->
+    <!-- table[border=1] -->
+    <table border="1">
+        <caption>테이블 제목</caption>
+        <!-- 열(Column) 단위로 색깔을 바꾼다.-->
+        <colgroup> 
+          <col span="1" style="background: red;"><!--span = 1 한 칸만 색깔이 변경되고-->
+          <col style="background: blue;"> <!--blue가 두번째 오니까, 두번째꺼만 색깔 변경됨-->
+          <!-- 나머지에 대해서는 색깔 언급이 없으므로 색깔 변경 없음 -->
+        </colgroup>
+
+        <!-- 테이블의 제목부분 -->
+        <thead style="background:green">
+            <tr>
+                <!-- th*3{Table Header} -->
+                <th>Table Header</th>
+                <th>Table Header</th>
+                <th>Table Header</th>
+            </tr>
+        </thead>
+
+        <!-- 테이블의 본문 부분 -->
+        <!-- <tbody style="background:pink"> -->
+        <tbody>
+            <!-- tr*3>td*3{Table Data} -->
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+        </tbody>
+
+        <!-- 테이블의 끝 부분 -->
+        <tfoot style="background: yellow;">
+            <tr>
+                <td>Table Foot Data</td>
+                <td>Table Foot Data</td>
+                <td>Table Foot Data</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>

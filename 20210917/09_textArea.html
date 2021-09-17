@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- p태그나 일반 태그들은 띄어쓰기를 아무리 많이 해도 한 칸 적용됨
+    엔터키로 안 먹음 -->
+    <p>안녕                     하세요.
+제 이름                  
+이
+동
+준입니다.
+    </p>
+    <!-- &nbsp;   태그 안에서의 공백 -->
+    <p>안녕&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;하세요.
+        제 이름<br>                  
+        이<br>
+        동<br>
+        준입니다.<br>
+            </p>
+<!-- &nbsp; 이나 br태그 없이 띄어쓰기를 모두 그~~~대로 표현하는 것 -->
+    <textarea name="" id="" cols="30" rows="10">안녕     하세요.
+제 이름
+이
+동
+준입니다.
+
+    </textarea>
+    <!-- 주의점 : 너~~~~~~~~무 그대로 표현해서 좀 조심해줘야 함 -->
+    <!-- 들여쓰기도 하면 안 됨 -->
+    <textarea name="" id="" cols="30" rows="10">
+        안녕(들여쓰기 그대로)
+        하세요.
+    </textarea>
+</body>
+</html>

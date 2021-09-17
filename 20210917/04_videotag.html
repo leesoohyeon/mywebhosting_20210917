@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HTML5와 XHTML5라는 이름의 표기법 차이일 뿐 둘은 똑같다. -->
+    <video src="Bike - 72566.mp4" controls></video>
+    <video src="Bike - 72566.mp4" controls="controls"></video>
+    
+    <h1>자동재생하고 싶다면?</h1>
+    <p>소리를 음소거해야지만 자동재생 가능</p>
+    <video src="Bike - 72566.mp4" controls autoplay muted></video>
+
+    <h1>동영상 썸네일 삽입하고, source 태그 넣어서 여러가지 확장자를 모두 올리고 싶은 경우 </h1>
+    <!-- 해당 동영상의 썸네일을 미리 넣고, 해당 동영상이 재생이 안 될 경우 대비 방법 -->
+    <!-- width="640px" height="360px" 사이즈 조정 -->
+    <!-- poster="desert-6215514_1920.jpg" 재생하기 전 미리보기 화면 -->
+    <video width="640px" height="360px" controls poster="desert-6215514_1920.jpg">
+        <!-- bike동영상 mp4 확장자가 재생 안 되면 webm 확장자 동영상이 재생되게 하기 -->
+        <!-- 사실은 Bike - 72566.webm 파일도 실제로 집어넣어야지만 됨(지금은 시간관계상 생략) -->
+        <source src="Bike - 72566.mp4" type="video/mp4">
+        <source src="Bike - 72566.webm" type="video/webm">
+    </video>
+
+</body>
+</html>
