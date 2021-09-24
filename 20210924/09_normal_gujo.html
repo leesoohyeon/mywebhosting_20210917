@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* li태그의 자손이면서(=li의 첫번째 자손) 그리고 a태그 인 것 */
+        /* 5개의 li태그에 대해서 각각 a태그가 딱 한 개임 */
+        li>a:first-child{color:red}
+
+        /* 첫번째 태그이면서 li태그 인것의 자손 */
+        li:first-child>a{background-color: springgreen;}
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <!-- (li>a[href=#]{lorem})*5 -->
+        <li><a href="#">lorem</a></li>
+        <li><a href="#">lorem</a></li>
+        <li><a href="#">lorem</a></li>
+        <li><a href="#">lorem</a></li>
+        <li><a href="#">lorem</a></li>
+    </ul>
+</body>
+</html>

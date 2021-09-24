@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* after : 해당 태그의 뒷부분... 빈공간 선택 */
+        /* before: 해당태그의 앞부분... 빈공간 선택 */
+        /* :: 는 :와는 다른 선택자 */
+        /* 선택이 안 되는 이유는 content가 일종의 background라고 보면 됨(삽입된 태그가 아님) */
+        h1::before {content : "가나다라"}
+        h1::after{content:"마바사"}
+    </style>
+</head>
+<body>
+    <!-- bbb를 전후로 가나다라, 마바사가 쓰여진다. -->
+    <p>aaa</p>
+    <h1>bbb</h1>
+    <p>cccc</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header>h1 {color:red}
+        /* 색깔이 적용이 안 되는 이유를 파악하고 색깔이 적용되게 해보세요! */
+        /* table>tr>th{color:blue} */
+        table>tbody>tr>th{color:blue}
+
+        /* 만약 난 죽어도 tbody가 싫으면? */
+        /* 후손(공백)을 이용 */
+        /* 자손(>)을 쓸 경우에는 반드시 tbody를 써야 함 */
+        table tr>th {background-color: pink;}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Lorem, ipsum dolor.</h1>
+    </div>
+    <!-- 2행 2열 테이블 -->
+    <table border="1">
+        <tr>
+            <th>aaa</th>
+            <th>bbb</th>
+        </tr>
+        <tr>
+            <td>가가가</td>
+            <td>나나나</td>
+        </tr>
+    </table>
+</body>
+</html>

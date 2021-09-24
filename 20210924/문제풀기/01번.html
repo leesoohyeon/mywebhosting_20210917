@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 만들기</title>
+    <style>
+        td
+        {
+            /* 글자 중앙정렬하는 방법1 */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <caption>colgroup 연습</caption>
+        <colgroup>
+            <col> <!-- 아무 스타일이 적용 안 됨-->
+            <col span="2" style="background-color:cyan">
+            <col style="background-color:yellow">
+        </colgroup>
+        <tr>
+            <td>
+                <!-- ../의 의미 : 상위 폴더 접근 -->
+                <img src="../7456316410689587162.png" width="250px" height="250px" alt="">
+            </td>
+            <!-- 글자 중앙 정렬 방법2 -->
+            <td align="center">PC</td>
+            <td align="center">Game</td>
+            <td align="center">V4</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="../lotus.jpg" width="250px" height="250px" alt="">
+            </td>
+            <td>연꽃</td>
+            <td>로터스</td>
+            <td>lotus</td>
+        </tr>
+    </table>
+</body>
+</html>

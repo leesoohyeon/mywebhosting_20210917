@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 일반구조 선택자 -->
+    <!-- 태그의 타입보다는 순서가 중요 -->
+    <style>
+        /* 첫번째태그이면서 h1태그여야 함 */
+        h1:first-child {color :red}
+    </style>
+    <!-- 형태구조 선택자 -->
+    <!-- 태그의 순서보다는 타입이 우선된다. -->
+        
+    <style>
+        /* h1태그들 중에서 첫번째 */
+        /* 여기서 h1태그가 총 body를 기준으로는 3개 */
+        /* body 안에 있는 div를 기준으로도 3개가 있는데 */
+        /* body랑 div안에 있는 h1태그들 중에서 가장 첫번째 것만 색칠함 */
+        h1:first-of-type
+        {
+            background-color: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem, ipsum.</p>
+    <h1>Lorem, ipsum dolor.1111111111</h1>
+    <h2>鼓同的</h2>
+    <h3>鼓同的</h3>
+    <h4>鼓同的</h4>
+    <h5>鼓同的</h5>
+    <h6>鼓同的</h6>
+    <h1>aaaa</h1>
+    <h1>aaaa</h1>
+    <div>
+        <h1>Lorem, ipsum dolor.222222222222</h1>
+        <h1>aaaa</h1>
+        <h1>aaaa</h1>
+        <h2>鼓同的</h2>
+        <h3>鼓同的</h3>
+        <h4>鼓同的</h4>
+        <h5>鼓同的</h5>
+        <h6>鼓同的</h6>
+    </div>
+</body>
+</html>

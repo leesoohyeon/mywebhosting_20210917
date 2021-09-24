@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://vjs.zencdn.net/7.2.3/video-js.css">
+    <script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
+    <style>
+        .ldj
+        {
+            color:red
+        }
+    </style>
+</head>
+<body>
+    <h1 class="ldj">이동준</h1>
+    <h1 class="ldj">이동진</h1>
+    <h1>아아아</h1>
+    <video autoplay controls width="640" height="360" class="video-js" data-setup="{}">
+        <source src="People - 84973.mp4" type="video/mp4">
+    </video>
+
+    <!-- 1. muted를 넣으면 무조건 자동재생됩니다. -->
+    <!-- 2. muted를 안 넣으면 firefox에서는 자동으로 muted시켜서 재생하고 크롬은 안 됨 -->
+    <!-- 2-1. 용량이 좀 크고(=동영상이 좀 길고) muted 안 넣으면 파이어폭스랑 크롬에서 둘 다 자동재생이 안 됨-->
+    <!-- video-js 를 사용한 경우 -->
+    <!-- 1. muted없이 autoplay를 넣으면 파이어폭스랑 크롬 재생안됨(동영상이 좀 큰 경우) -->
+    <!-- 2. 동영상이 좀 작은 경우라면? -->
+    <!-- 파이어폭스는 소리도 되고 동영상도 되며, 크롬은 안 됨. -->
+</body>
+</html>
